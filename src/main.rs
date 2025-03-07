@@ -108,9 +108,9 @@ async fn handle_socket(socket: WebSocket) {
     let mut pcd_packet = PcdData {
         pcd_name: "test".to_string(),
         process_times: ProcessTimes {
-            edge: 0.0,
-            send: 0.0,
-            matching: 0.0,
+            edge: 0.05,
+            send: 0.07,
+            matching: 0.2,
         },
         pcd: vec![
             Pcd {
@@ -127,7 +127,7 @@ async fn handle_socket(socket: WebSocket) {
     };
 
     let mut pcd_packet02 = PcdData {
-        pcd_name: "test".to_string(),
+        pcd_name: "test02".to_string(),
         process_times: ProcessTimes {
             edge: 0.0,
             send: 0.0,
